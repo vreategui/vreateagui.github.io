@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            text-align: center;
+            background: #333;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            padding: 1rem;
+            display: inline-block;
+        }
+        nav a:hover {
+            background: #444;
+        }
+        section {
+            padding: 2rem 1rem;
+            max-width: 1000px;
+            margin: auto;
+        }
+        section h2 {
+            border-bottom: 2px solid #222;
+            padding-bottom: 0.5rem;
+        }
+        .project {
+            background: #fff;
+            margin: 1rem 0;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .project img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .project a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .project a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <p>Projects, Games, SQL & C Code, and Reports</p>
+    </header>
+    <nav>
+        <a href="#games">Games</a>
+        <a href="#sql">SQL Projects</a>
+        <a href="#cprojects">C Projects</a>
+        <a href="#report">Report</a>
+    </nav>
+
+    <section id="games">
+        <h2>Games</h2>
+        <div class="project">
+            <h3>Shadow Dungeon</h3>
+            <img src="res/screenshot1.png" alt="Shadow Dungeon Screenshot">
+            <p>A 2D platform battle game built in Java using Bagel library.</p>
+            <p><a href="https://github.com/username/shadow-dungeon">View on GitHub</a></p>
+        </div>
+        <div class="project">
+            <h3>Second Game</h3>
+            <img src="res/screenshot2.png" alt="Second Game Screenshot">
+            <p>Description of your second game here.</p>
+            <p><a href="https://github.com/username/second-game">View on GitHub</a></p>
+        </div>
+    </section>
+
+    <section id="sql">
+        <h2>SQL Projects</h2>
+        <div class="project">
+            <h3>Database Project</h3>
+            <p>Describe your SQL project here.</p>
+            <p><a href="https://github.com/username/sql-project">View on GitHub</a></p>
+        </div>
+    </section>
+
+    <section id="cprojects">
+        <h2>C Projects</h2>
+        <div class="project">
+            <h3>C Project 1</h3>
+            <p>Describe your C project here.</p>
+            <p><a href="https://github.com/username/c-project">View on GitHub</a></p>
+        </div>
+    </section>
+
+    <section id="report">
+        <h2>20-Page Report</h2>
+        <div class="project">
+            <h3>Project Report</h3>
+            <p>Summary of your report, topics covered, etc.</p>
+            <p><a href="res/report.pdf" target="_blank">View PDF</a></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Your Name
+    </footer>
+</body>
+</html>
