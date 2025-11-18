@@ -5,17 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vanesa Reategui - Portfolio</title>
 <style>
-/* GENERAL STYLES */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #121212;
-    color: #f0f0f0;
+    color: #eee;
 }
-a { color: #1e90ff; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* HEADER & NAV */
 header {
     text-align: center;
     padding: 2rem;
@@ -28,140 +24,3 @@ nav {
     padding: 0.5rem;
 }
 nav a {
-    margin: 0 1rem;
-    font-weight: bold;
-    transition: color 0.2s;
-}
-nav a:hover { color: #00bfff; }
-
-/* SECTION CARDS */
-section { padding: 2rem 1rem; max-width: 1000px; margin: auto; }
-.project-card {
-    background: #1f1f1f;
-    margin: 2rem 0;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-.project-card:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 25px rgba(30,144,255,0.7);
-}
-
-/* CARD CONTENT */
-.project-card h3 { margin-top: 0; }
-.project-card p { line-height: 1.5; }
-
-/* IMAGES & PDF */
-.project-card img {
-    width: 100%;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 10px;
-}
-.project-card iframe {
-    width: 100%;
-    min-height: 500px;
-    margin-top: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background: #1f1f1f;
-    color: #888;
-}
-</style>
-</head>
-<body>
-
-<header>
-    <h1>Vanesa Reategui - Portfolio</h1>
-    <p>Projects, Games, SQL & C Code, and Reports</p>
-</header>
-
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#games">Games</a>
-    <a href="#sql">SQL Projects</a>
-    <a href="#cprojects">C Projects</a>
-    <a href="#report">Report</a>
-</nav>
-
-<!-- ABOUT ME -->
-<section id="about">
-    <div class="project-card">
-        <h3>About Me</h3>
-        <p>Hello! I'm a 3rd year Bachelor of Design student at Melbourne University, majoring in Computing and Software Systems. I have experience with Java, C, SQL, and Python, and enjoy analyzing problems, designing solutions, and learning new technologies. Through my projects, I have developed strong skills in programming logic, software development, and problem-solving.</p>
-    </div>
-</section>
-
-<!-- GAMES -->
-<section id="games">
-    <div class="project-card">
-        <h3>Shadow Dungeon - Part 1</h3>
-        <img src="res/Basic.png" alt="Battle Rooms">
-        <p>A 2D game where the player must touch an enemy to access the next room.</p>
-        <p><a href="https://github.com/vreategui/Shadow-Dungeon---Part-1" target="_blank">View on GitHub</a></p>
-    </div>
-
-    <div class="project-card">
-        <h3>Shadow Dungeon - Extension</h3>
-        <img src="res/ShadowDungeon.png" alt="Shadow Dungeon Extension">
-        <p>Fast-paced 2D dungeon crawler built with Bagel library in Java. Explore rooms, fight enemies, collect coins, unlock doors, and upgrade weapons or health through the in-game store.</p>
-        <iframe src="res/UML.drawio.pdf"></iframe>
-        <p><a href="https://github.com/vreategui/Shadow-Dungeon---part-2" target="_blank">View on GitHub</a></p>
-    </div>
-</section>
-
-<!-- SQL PROJECTS -->
-<section id="sql">
-    <div class="project-card">
-        <h3>Social Media Platform - Database Design</h3>
-        <p>Created a physical MySQL database model (Crow’s Foot notation) for a social media platform focused on authentic content and moderation.</p>
-        <iframe src="social_media_physical_ER.pdf"></iframe>
-        <p><a href="social_media_physical_ER.pdf" target="_blank">Download/View Full PDF</a></p>
-    </div>
-
-    <div class="project-card">
-        <h3>Movie Database SQL Queries</h3>
-        <p>Developed SQL queries to analyze movies, ratings, genres, and cross-platform data across IMDB, Netflix, Metacritic, Rotten Tomatoes, and Movielens.</p>
-        <p><a href="https://github.com/vreategui/Database-Systems/blob/main/VanesaReategui_1606065.sql" target="_blank">View on GitHub</a></p>
-    </div>
-</section>
-
-<!-- C PROJECTS -->
-<section id="cprojects">
-    <div class="project-card">
-        <h3>Graph Algorithms in C</h3>
-        <p>This project implements key graph algorithms in C, including:</p>
-        <ul>
-            <li>Cycle detection using DFS</li>
-            <li>Dijkstra's shortest path algorithm with priority queue</li>
-            <li>Graph traversal and path reconstruction</li>
-        </ul>
-        <img src="res/graph_theory.png" alt="GraphTheory">
-        <p><a href="https://github.com/vreategui/AlgoGraphs" target="_blank">View on GitHub</a></p>
-    </div>
-</section>
-
-<!-- REPORTS -->
-<section id="report">
-    <div class="project-card">
-        <h3>Accident Severity Report</h3>
-        <p>This report investigates the impact of road types, road conditions, intersection types, and speed zones on accident severity using datasets from VicRoads.</p>
-        <iframe src="Accident_Severity_Report.pdf"></iframe>
-        <p><a href="Accident_Severity_Report.pdf" target="_blank">Download/View Full PDF</a></p>
-    </div>
-</section>
-
-<footer>
-    &copy; 2025 Vanesa Reategui
-</footer>
-
-</body>
-</html>
